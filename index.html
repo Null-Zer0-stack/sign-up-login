@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign-Up Page</title>
+        <title>Modern Sign-Up Page</title>
         <link rel="stylesheet" href="./style.css">
         <script src="./script.js"></script>
 </head>
@@ -13,24 +13,39 @@
     <h2>Create Account</h2>
 
     <form id="signupForm">
+
         <div class="input-group">
             <label>Username</label>
-            <input type="text" id="username" placeholder="Enter username" required>
+            <input type="text" id="username" required>
         </div>
 
         <div class="input-group">
             <label>Email</label>
-            <input type="email" id="email" placeholder="Enter email" required>
+            <input type="email" id="email" required>
         </div>
 
         <div class="input-group">
             <label>Phone</label>
-            <input type="tel" id="phone" placeholder="Enter phone number" required>
+            <input type="tel" id="phone" required>
         </div>
 
         <div class="input-group">
             <label>Password</label>
-            <input type="password" id="password" placeholder="Enter password" required>
+            <input type="password" id="password" required>
+
+            <!-- Strength bar -->
+            <div class="strength-bar">
+                <div class="strength-fill" id="strengthFill"></div>
+            </div>
+
+            <!-- Requirements -->
+            <div class="requirements">
+                <span id="req-length">• At least 8 characters</span>
+                <span id="req-upper">• One uppercase letter</span>
+                <span id="req-lower">• One lowercase letter</span>
+                <span id="req-number">• One number</span>
+                <span id="req-symbol">• One special symbol</span>
+            </div>
         </div>
 
         <button type="submit">Sign Up</button>
